@@ -1,0 +1,233 @@
+body {
+    padding: 5px;
+    display: grid;
+
+    background-image: url(https://s1.1zoom.me/b5050/143/Germany_Scenery_Fields_486760_1920x1080.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 0.5fr fr 1fr;
+    gap: 3px;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+header {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 4rem;
+    background-color: rgba(244, 164, 96, 0.5);
+    border: solid black;
+    padding: 20px;
+    text-align: center-start;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-variant: small-caps;
+    font-style: italic;
+    text-align: center;
+
+}
+
+
+
+nav {
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-color: beige;
+    height: 30px;
+    border: solid;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.8;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background: lightgrey;
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+.navbar {
+    margin: 30px;
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+#sidebar {
+    display: grid;
+    grid-row-start: 3;
+    display: ;
+
+
+    background-color: beige;
+    padding: 20px;
+    opacity: 0.8;
+
+
+}
+
+main {
+    display: grid;
+    grid-row-start: 3;
+    grid-row-end: 4;
+ 
+    grid-column-start: 2;
+    background-color: rgba(245, 245, 220, 0.0);
+
+    width: auto;
+    text-align: center;
+
+}
+
+.kobild1 {
+    display: grid;
+    height: auto;
+
+
+}
+
+#sidebar-right {
+    display: grid;
+    grid-row-start: 3;
+
+    
+
+  
+    background-color: beige;
+    padding: 20px;
+    opacity: 0.8;
+
+
+}
+
+.sidobarbild {
+    display: grid;
+    width: auto;
+    padding: 10%;
+}
+
+footer {
+    background-color: rgba(245, 245, 220, 0.8);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 7;
+
+    height: auto;
+    padding: 15px;
+    opacity: 0.9;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+#left{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+#right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mid-container {
+    background-color: rgba(240, 235, 210, 0.0);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    grid-auto-flow: column;
+    grid-auto-flow: row;
+
+
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.koinfo {
+    padding: 10px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    opacity: 0.8;
+    ;
+}
+
+h5 {
+    font-size: 20px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.bildgalleri {
+    text-align: center;
+}
+/*bildgalleri*/
+.bildko, .bildko1, .bildko2, .bildko3,.bildko4,.bildko5,.bildko6,.bildko7,.bildko8{
+    max-width: 400px;
+    max-height: auto;
+
+}
+
+.top {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.ruta {
+    border: solid;
+    background-color: white;
+}
+
+.kontakt {
+    text-align: center;
+}
+
+@media  screen and (max-width:600px) {
+   
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}

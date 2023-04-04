@@ -1,0 +1,93 @@
+
+<html>
+<head>
+<link rel="stylesheet" href="kontaktformulär.css">
+</head>
+<body>
+      
+  <div class="container">
+
+        <header class="header">
+            <div class="logga"><img src="" width="100px" height="100px"></div>
+            <h1>djurbloggen.mu</h1>
+            <input type="checkbox" class="nav-box" id="nav-box">
+            <label for="nav-box" class="nav-box-label">X</label>
+        </header>
+
+        <div class=nav>
+            <div class="nav1"><a href="Nybloggförslag.html"> startsida</a> </div>
+            <div class="nav2"> <a href="Isaknyblogg.html"> Ko</a> </div>
+            <div class="nav3"><a href="simon.html"> Myra</a> </div>
+            <div class="nav4"> <a href="mattias.html"> känguru</a> </div>
+        </div>
+
+        <form action="" class="kontaktformulär">
+          <h2>Kontakta oss!</h2>
+          <div> <label for="namn">Namn</label> <br>
+          <input type="text" name="namn" id="namn" placeholder="Rosa" required> 
+        </div>
+         <div>
+          <label for="efternamn">Efteramn</label> <br>
+          <input type="text" name="efternamn" id="efternamn" placeholder="rosendotter">
+         </div>
+          <div>
+           <label for="telefon">telefonnummer</label> <br>
+           <input type="tel" name="telefon" id="telefon" placeholder="070 00 000 00" >
+          </div>
+          <div>
+            <label for="email">E-mail</label>  <br>
+          <input type="email" name="email" id="email" placeholder="kosamu@mail.com"required> 
+           
+          </div>
+          <div>
+           <label for="ålder">ålder</label> <br>
+          <input type="number" name="ålder" id="ålder" min="1" max="100"> 
+          </div>
+         <!-- <div>är du man eller kvinna <br><label for="man">man</label>
+            <input type="radio" name="gender" id="man" value="man">
+          </div>
+          <div><label for="kvinna">kvinna</label>
+              <input type="radio" name="gender" id="kvinna" value="kvinna">
+          </div>
+          
+          <div><label for="hen">hen</label>
+          <input type="radio" name="gender" id="hen" value="hen">
+          </div>-->
+          <br>
+          <div> <label for="meddelande" id="meddelande"> skriv ditt meddelande här!</label>  <br>
+          <textarea name="meddelande" id="meddelande" cols="70" rows="15" required></textarea>  
+          </div>
+          
+          <br>
+          <button class="button">Skicka!</button>
+         
+        </form>
+
+
+     
+      <footer id="footer">
+
+        <div id="logga"><img src="Maxx Björk.png" width="80px" height="80px"></div>
+
+        <section id="formulär">
+            <h4 id="överskrift"> prenumirera på djurbloggens nyhetsbrev!</h4>
+            <label for="">Namn</label> <br>
+            <input type="text" placeholder="per"> <br>
+            <label for="">Efternamn</label><br>
+            <input type="text" placeholder="Olsson"> <br>
+            <label for="">email</label><br>
+            <input type="text" placeholder="hadeenbonagard@mail.com">
+            <br> <label> gillar du vår djurblogg?</label>
+            <br>
+            <select>
+                <option value="">super bra</option>
+                <option value="">ganska bra</option>
+                <option value="">mindre bra</option>
+
+            </select>
+            <button id=button>Skicka</button>
+        </section>
+      </footer>
+  </div>
+</body>
+</html>

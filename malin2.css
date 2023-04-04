@@ -1,0 +1,233 @@
+body {
+    cursor: pointer;
+    background-color: rgb(255, 254, 240);
+    background-image: url(https://elephantguide.com/wp-content/uploads/2021/11/Elephants-in-wild-Africa-1024x683.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+ 
+ :root {
+    --head-foot: rgba(211, 181, 125, 0.8);
+    --main-background: rgb(251, 239, 214, 0.8); 
+    --side-background: rgba(235, 204, 166, 0.8) ;
+    --nav-background:  rgba(235, 204, 166, 0.8); 
+    
+ } 
+ /* container är helasidans layout uppbygd med grid*/
+ .container{
+     display: grid;
+     grid-template-columns: 2fr 5fr;
+      grid-template-rows: 0.1fr 0.1fr 6fr 1fr; 
+    
+     gap: 10px;
+ }
+ 
+ header{
+     background: var(--head-foot);
+     grid-column-start: 1;
+     grid-column-end: 7;
+     grid-row-start: 1;
+    text-align: center;
+
+    
+ }
+ .textheader {
+   justify-content: center;
+ }
+ /*här börjar naigationen*/
+ 
+ .nav{
+     background: var(--nav-background);
+     grid-column-start: 1;
+     grid-column-end: 7;
+     grid-row-start: 2;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+    
+ }
+
+ nav ul{
+     display: flex;
+     flex-direction: row;
+     gap:20px;
+ }
+ 
+ nav li {
+     list-style: none;
+ }
+ 
+ a {
+     text-decoration: none;
+     color: black;
+ }
+ 
+ a:hover{
+     color: rgb(85, 84, 84);
+ }
+  /*här börjar sidebar left*/
+ aside{
+     background-color: var(--side-background);
+     grid-column-start: 1;
+     grid-column-end: 2;
+     grid-row-start: 3;
+     grid-row-end: 8;
+    
+     display: grid;
+     grid-template-rows: 2fr 2fr 2fr;
+ }
+
+ .left1, .left2, .left3{
+    padding: 5%;
+}
+
+.left2 img{
+    box-shadow: 5px 5px 5px 5px;
+}
+.left3{
+    display: grid;
+    align-items:  end;
+}
+ /*här börjar main kontent*/
+ .main{
+     background-color: var(--main-background);
+     grid-column-start: 2;
+     grid-column-end: 7;
+     grid-row-start: 3;
+     grid-row-end: 8;
+     display: grid;
+     height: fit-content;
+     gap: 10px;
+ 
+     justify-content: center;
+     text-align: center;
+ 
+ }
+ .paragraf-bild1 {
+    box-shadow: 2px 2px 2px 2px;
+   
+
+ }
+ .rubrik {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ .paragraf {
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+ }
+
+ .space{
+    padding-bottom:  100px;
+ }
+ .footer{
+     background-color: var(--head-foot);
+     grid-column-start: 1;
+     grid-column-end: 7;
+     
+grid-row-start: 8;
+ }
+ #footer{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr  1fr;
+    background-color:var(--head-foot);
+    grid-auto-flow: column;
+    grid-auto-flow: row;
+    height: 300px;
+    
+
+}
+
+.footerlänkar
+{
+margin-top: 30px;
+margin-left: 30px;
+}
+.footer li {
+ list-style: none;
+ text-align: center;
+    margin: 5;
+    padding: 5;
+    
+}
+.footer a {
+    color: black;
+}
+
+
+#formulär {
+font-size: small;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+grid-row-start: 1;
+grid-row-end: 2;
+grid-column-start:3;   
+  text-align: center;
+
+}
+
+#button{
+ 
+    margin: 10px;
+ border: 2px solid orange;
+ border-radius: 10px;
+ width: 70px;
+ height: 30px;
+
+}
+
+
+.link{
+    grid-row-start:2;
+   grid-column-start:2;  
+ 
+    margin-bottom: 30px;
+    
+}
+
+
+ 
+ @media screen and (max-width: 600px) /*mobil anpassning*/
+ {
+     .container{
+         display: flex;
+         flex-direction: column;
+     }
+    
+
+ .nav:hover  {
+    display: block;
+ }
+  .nav li{
+    display: none;
+  }
+ .aside{
+  display: none;
+  }
+ .fot-loga,
+ .head-loga {
+    display: none;
+ }
+ #footer{
+    grid-template-columns: 1fr;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+  
+ }
+ 
+    
+
+ }
+ 
+ 
+ 
+ 

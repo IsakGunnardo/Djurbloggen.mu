@@ -1,0 +1,267 @@
+body {
+    cursor: pointer;
+    background-color: rgb(255, 254, 240);
+    background-image: url(https://elephantguide.com/wp-content/uploads/2021/11/Elephants-in-wild-Africa-1024x683.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+::selection{  
+    background-color: rgb(120, 204, 232);
+    color: black;
+}
+.container {
+    display: grid;
+    grid-template-rows: 0,7fr 1fr 0.5fr 4fr;
+    grid-template-columns: 1fr 0,5fr 2fr;
+    
+    gap: 8px;
+    
+}
+.logga{
+    
+    display: grid;
+    text-align: start;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin-left: 30px;
+    
+}
+.header {
+    display: grid;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-auto-flow: column;
+    grid-auto-flow: row;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-variant: small-caps;
+    font-style: italic;
+    background-color: rgba(255, 228, 196, 0.6);
+
+    gap: 7px;
+    
+}
+.nav-box {
+    display: none;
+}
+.nav-box-label{
+    display: none;
+}
+
+h1{
+    display: grid;
+    text-align: center;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+a{
+    text-decoration: none;
+}
+a:hover
+{background: rgba(214, 205, 104, 0.5);
+    color: rgb(5, 10, 10); 
+    text-decoration: none;}
+    
+    a:link{color: black;}
+    a:visited{color: black;}
+
+.nav{
+    display: grid;
+    grid-template-columns:  4.5fr 0.7fr 1fr 2fr; 
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgba(255, 228, 196, 0.6);
+    
+    color: black;
+    font-size: 1.5rem;
+}
+
+.side-left {
+    grid-row-start: 3;
+    background-color: rgba(255, 228, 196, 0.6);
+    
+    padding: 2rem;
+    
+}
+.bild {
+    display: grid;
+     grid-row-start: 3;
+     grid-auto-flow: column;
+
+     background-color: beige;
+     padding: 2rem;
+    
+ }
+.side-right {
+    background-color: rgba(255, 228, 196, 0.6);
+    grid-row-start: 3;
+   
+    padding: 2rem;
+}
+
+.bild{
+    border-radius: 20px;
+    background-size: 100%;
+    background-color: rgba(255, 228, 196, 0.6);
+}
+
+.container2{
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    gap: 7px;
+   
+    
+   
+  
+}
+.paragraf1 {
+    display: flex;
+    
+    flex-wrap: wrap;
+    width: 90vw;
+    
+    background-color: rgba(255, 228, 196, 0.8);
+  
+    padding: 2rem;
+ 
+}
+
+
+.paragraf2 {
+    display: flexbox;
+
+    background-color: rgba(255, 228, 196, 0.8);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90vw;
+    padding: 2rem;
+     
+  
+    gap: 15px;
+ 
+}
+.paragraf3 {
+    display: flex;
+   
+    background-color: rgba(255, 228, 196, 0.8);
+    flex-wrap: wrap;
+    width: 90vw;
+  
+  
+    padding: 2rem;
+}
+
+
+#headergalleri {
+    background-color: bisque;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.bildgalleri{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:15px;
+    margin: 15;
+    flex-wrap: wrap;
+    align-items: center;
+   
+   
+}
+
+.bildgalleri-rad2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px;
+    flex-wrap: wrap;
+    
+    width: 100px;
+    height: 100px;
+   
+}
+.bildgalleri-rad3
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap:20px ;
+   
+}
+#top { display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;}
+  
+#footer{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr  1fr;
+    background-color: rgba(255, 228, 196, 0.6);
+    grid-auto-flow: column;
+    grid-auto-flow: row;
+    height: 300px;
+    
+
+}
+
+#logga
+{
+    
+}
+
+#formulär {
+grid-row-start: 1;
+grid-row-end: 2;
+grid-column-start:3;   
+
+
+}
+
+#button{
+ 
+    margin: 10px;
+ border: 2px solid orange;
+ border-radius: 10px;
+ width: 70px;
+ height: 30px;
+
+}
+.link{
+    grid-row-start: 3;
+   grid-column-start:2;  
+
+ 
+    margin-bottom: 30px;
+    gap:15px;
+
+    text-align: center;
+}
+    
+    .ruta{
+        text-align: center;
+       
+    
+}
+.kontakt
+{ 
+        text-align: center;
+        margin-top: 80px;
+        
+}
+    

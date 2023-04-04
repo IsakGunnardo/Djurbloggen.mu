@@ -1,0 +1,188 @@
+
+
+#container{/* bestämmer hur containern ska vara uppdelad*/
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 3fr 5fr  3fr;
+    gap: 3px;    
+    background-color: beige;
+
+}
+
+#header{/*bestämmer hur headern ser ut*/
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end:1;
+    background-color: sandybrown;
+    border:solid black;
+    padding: 20px;
+    text-align:center-start;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-variant: small-caps;
+    font-style: italic;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+nav{/*bestämmer hur navbaren ser ut*/
+    display: flex;
+    flex-direction: row;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    background-color: bisque;
+    height: 40px;
+    border: solid;
+    text-align: center;   
+    border-radius: 10px;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    
+    
+
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+a{text-decoration: none;}/* a selectorn bestämmer hur alla länkar ska se ut*/
+a:hover{background: lightgrey;
+    color: black;
+    text-decoration: none;}
+a:link{color: black;
+}
+a:visited{color: black;}
+
+.navbar{/* Hur innehållet i navbaren ska vara*/
+    margin: 30px;
+    font-size: 20px;
+    opacity: 0.9;
+    padding:10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+
+
+
+#sidebar{/*Hur vänster sidebar ska se ut*/
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: blanchedalmond;
+    padding: 20px;
+    height: 100vh;   
+    border-radius: 10px;
+    text-align: center;
+    
+
+}
+
+#main{/*Hur mainen ska se ut*/
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: rgba(240, 235, 210, 0.0);/* gör så att färgen på mainen får en opacity*/
+    padding:20px;
+    height: 100vh;
+    text-align: center;
+    border-radius: 50px;
+    
+    margin-top: 25%;
+   
+    
+}
+.bild{border-radius: 50px;}/*bestämmer hur main bilden ska vara*/
+
+
+
+#sidebar1{/*bestämmer hur höger sidebar ska se ut*/
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end:4;
+    background-color: beige;
+    padding: 20px;
+    height: 100vh;
+    border-radius: 10px;
+    text-align: center;
+   
+
+}
+.sidobarbild{/*hur höger sidebar bild ska vara*/
+    width: 80%;
+    padding: 10%;
+}
+
+#footer{/*bestämmer hur footern ska se ut*/
+    background-color: sienna;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    height: 5pc;
+    padding: 15px;
+    border-radius: 10px;
+    opacity: 0.9;
+
+}
+
+.mid-container{/* hur mid containern ska se ut*/
+    background-color: beige;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    border-radius: 10px;
+    opacity: 0.9;
+
+
+}
+.mid-container div{/* väljer alla div i mid containern*/
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: whitesmoke;
+    opacity: 0.8;
+}
+
+h5{
+    font-size: 20px;
+    text-align: center;
+}
+
+h3{text-align: center;}
+#bildgalleri{
+    text-align: center;
+}
+
+.top{ /* Bestämmer hur top knappen ser ut*/
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 40px;}
+.prn{border: solid;
+    border-radius: 10px;
+background-color: whitesmoke;}
+.pr{margin-left: 40px;
+margin-top: 10px;}
+.link{margin-bottom: 30px;
+text-align: center;
+margin-bottom: 50px;}
+
+.ruta{border: solid;
+border-radius: 10px;
+background-color: white;}
+.kontakt{/*Hur kontaktuppgifter placerar sig*/ 
+    text-align: center;
+}
+

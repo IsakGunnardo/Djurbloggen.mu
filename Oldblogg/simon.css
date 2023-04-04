@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://media.sciencephoto.com/image/z3450860/800wm/Z3450860-Ant_hill.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+.header {
+  grid-column: span 2;
+  text-align: center;
+  background-color: lightgoldenrodyellow;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+
+.navbar {
+  grid-column: span 2;
+  overflow: hidden;
+  background-color: lightgoldenrodyellow;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color:lightcoral;
+  color: black;
+}
+
+.side1 {
+  grid-column: span 1;
+  grid-row-start: 3;
+  grid-row-end: 7;
+  text-align: center;
+  border-radius: 20px;
+  background-color: lightgoldenrodyellow;
+  opacity: 0.8;
+}
+
+.text-side1 {
+  padding: 8px;
+  text-indent: 50px;
+  text-align: left;
+  letter-spacing: 3px;
+}
+
+.main-box {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-color: rgb(245, 245, 220, 0.8);
+  text-align: center;
+  border-radius: 20px;
+}
+
+.bild1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: fill;
+}
+
+.main-box1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  background-color: lightgoldenrodyellow;
+  opacity: 0.8;
+}
+
+.text-side2 p {
+  padding: 10px;
+  text-indent: 50px;
+  text-align: left;
+  letter-spacing: 3px;
+}
+
+.bild2 {
+  width: 100%;
+  height: 33%;
+  border-radius: 20px;
+  padding-top: 5%;
+}
+
+.main-box2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-color: rgb(245, 245, 220, 0.8);
+  text-align: center;
+  border-radius: 20px;
+}
+
+.bild3 {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: fill;
+}
+
+.main-box3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  background-color: rgb(245, 245, 220, 0.8);
+  text-align: center;
+  border-radius: 20px;
+}
+
+.bild4 {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: fill;
+}
+
+.main-box4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  background-color: rgb(245, 245, 220, 0.8);
+  text-align: center;
+  border-radius: 20px;
+}
+
+.bild5 {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: fill;
+}
+
+.footer {
+  grid-column: span 2;
+  background-color: lightgoldenrodyellow;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+
+fieldset{
+  width: 20%;
+  padding: 10px;
+  margin: 10px;
+}
