@@ -122,17 +122,16 @@ body{
      padding: 5%;
  }
  .left2{ background: beige;
- gap: 10px;
- display: grid;
- align-items: center;
+ gap: 100px;
+ text-align: center;
  }
- 
- .left2 img{
-     box-shadow: 5px 5px 5px 5px;
+ legend{
+    text-align: center;
  }
-
  .follow{
-    gap: 10px;
+    gap: 30px;
+    align-items: center;
+    
  }
 
  .follow a{
@@ -140,13 +139,12 @@ body{
     font-size: 30px;
  }
 
- .left3{background: beige;}
- 
+
  .left3{
+    background: beige;
      display: grid;
      align-items:  center;
      height: 20%;
-     position: sticky;
  }
  .right{
      padding: 5%;

@@ -32,7 +32,7 @@ header>h1{
     margin-left: 10px;
 
  }
-
+/*knapp som följer med, som länkar tillbaks tilltoppen*/
 div.sticky {
     display: grid;
     grid-column-start: 3;
@@ -47,6 +47,9 @@ div.sticky {
     padding: 10px;
     font-size: 30px;
     height: 25px;
+  }
+  div.sticky:hover{/*Gör så att knappen scalar upp när man hovrar över den*/
+    scale: 1.2;
   }
 
 nav{
@@ -117,7 +120,9 @@ a:hover{
     padding: 5%;
 }
 
-.left2{background: beige;
+.left2{
+background:  rgba(255, 228, 196, 0.8);
+
 width: auto;
 gap: 10px;
 flex-direction: column;
@@ -147,7 +152,8 @@ padding: 5%;}
    justify-content: end;
 
 }
-.left1{ background: beige;
+.left1{ 
+background:  rgba(255, 228, 196, 0.8);
 text-align: center;
 gap: 10px;
 
@@ -155,7 +161,10 @@ gap: 10px;
 
 
 
-.left3{background: beige;}
+.left3{
+    background:  rgba(255, 228, 196, 0.8);
+
+}
 
 .left3{
     display: grid;

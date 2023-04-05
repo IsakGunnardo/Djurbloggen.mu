@@ -46,18 +46,14 @@
 
  }
  
-/*knapp som följer med som länkar tillbaks tilltoppen*/
+/*knapp som följer med, som länkar tillbaks tilltoppen*/
  div.sticky {
     display: grid;
     grid-column-start: 3;
     grid-row-start: 3;
     grid-row-end: 4;
     position: -webkit-sticky;
- 
-    float: right;
     position: sticky;
-    
-    top: 0;
     padding: 10px;
     font-size: 30px;
     height: 25px;
@@ -65,7 +61,7 @@
     border-radius: 100px;
     border: solid lightgrey;
   }
-  div.sticky:hover{
+  div.sticky:hover{/*Gör så att knappen scalar upp när man hovrar över den*/
     scale: 1.2;
   }
   /*Kod för navbaren*/
