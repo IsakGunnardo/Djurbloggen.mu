@@ -205,9 +205,6 @@ grid-template-columns: 3fr;
          display: flex;
          flex-direction: column;
      }
-     div .sticky{
-
-     }
     .aside{
         display: none;
     }
