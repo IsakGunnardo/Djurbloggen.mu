@@ -51,9 +51,10 @@
     display: grid;
     grid-column-start: 3;
     grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-end: 3;
     position: -webkit-sticky;
     position: sticky;
+    top: 0;
     padding: 10px;
     font-size: 30px;
     height: 25px;
