@@ -9,11 +9,6 @@ p {
      text-indent: 50px;
      text-align: left;
      letter-spacing: 3px;
-p {
-     padding: 10px;
-     text-indent: 50px;
-     text-align: left;
-     letter-spacing: 3px;
 }
 
 .container {
@@ -55,14 +50,6 @@ div.sticky {
      
 div.sticky:hover {/*Gör så att knappen scalar upp när man hovrar över den*/     
      scale: 1.2;    
-}
-
-@media screen and (max-width: 640px) {
-     .container {
-          display: flex;
-          flex-direction: column;
-          gap: 1.5rem;
-     }   
 }
 
 .header {
