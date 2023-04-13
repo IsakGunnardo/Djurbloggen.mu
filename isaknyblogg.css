@@ -12,6 +12,7 @@
      display: grid;
      grid-template-columns: 2fr 5fr;
 
+
      gap: 5px;
  }
  /*Header kod*/
@@ -45,24 +46,23 @@
 
  }
  
-/*knapp som följer med som länkar tillbaks tilltoppen*/
+/*knapp som följer med, som länkar tillbaks tilltoppen*/
  div.sticky {
     display: grid;
     grid-column-start: 3;
-    grid-row-start: 6;
+    grid-row-start: 3;
     grid-row-end: 3;
     position: -webkit-sticky;
-    justify-content: flex-end;
     position: sticky;
     top: 0;
     padding: 10px;
     font-size: 30px;
     height: 25px;
     background-color: rgba(255,255,255, 0.6);
-    border-radius: 200px;
+    border-radius: 100px;
     border: solid lightgrey;
   }
-  div.sticky:hover{
+  div.sticky:hover{/*Gör så att knappen scalar upp när man hovrar över den*/
     scale: 1.2;
   }
   /*Kod för navbaren*/
@@ -205,9 +205,6 @@ grid-template-columns: 3fr;
      .container{
          display: flex;
          flex-direction: column;
-     }
-     div .sticky{
-
      }
     .aside{
         display: none;
