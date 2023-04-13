@@ -1,6 +1,7 @@
 body {
      background-color: black;
      box-sizing: border-box;
+     box-sizing: border-box;
 }
 
 p {
@@ -16,13 +17,39 @@ p {
      gap: 5px;
 }
 
-@media screen and (max-width: 640px) {
-     .container {
-          display: flex;
-          flex-direction: column;
-          gap: 1.5rem;
-     }
+div.sticky {
+
+     width: 18px;
+
+     display: grid;
+          
+     grid-column-start: 2;
+          
+     grid-row-start: 3;
+          
+     grid-row-end: 3;
+          
+     position: -webkit-sticky;
+          
+     position: sticky;
+          
+     top: 0;
+          
+     background-color: rgba(255,255,255,.5);
+          
+     border-radius: 100px;
+          
+     border: solid lightgray;
+          
+     padding: 10px;
+          
+     font-size: 25px;
      
+     height: 18px;    
+}
+     
+div.sticky:hover {/*Gör så att knappen scalar upp när man hovrar över den*/     
+     scale: 1.2;    
 }
 
 .header {
@@ -64,33 +91,52 @@ a:hover {
 }
 
 .sidebar {
-     display: grid;
-     position: relative;
+     display: block;
      grid-column-start: 1;
      grid-column-end: 2;
-     grid-row: 3 / 8;
+     grid-row-start: 3;
+     grid-row-end: 8;
+     background-color: beige;
+}
+
+.side-start {
+     display: block;
+     grid-column-start: 1;
+     grid-column-end: 2;
+     grid-row-start: 3;
+     grid-row-end: 4;
      background-color: beige;
 }
 
 .left-blogg-img {
      display: block;
+}
+
+.left-img {
      margin-left: auto;
      margin-right: auto;
      padding: 5%;
      text-align: center;
-}
-
-.left-img {
      width: 100%;
 }
 
 .left-follow {
      display: block;
-     text-align: center;
-     width: auto;
-     height: 100%;
-     gap: 10px;
-     padding: 5%;
+}
+
+fieldset {
+     display: block;
+     margin-inline-start: 2px;
+     margin-inline-end: 2px;
+     padding-block-start: 0.35em;
+     padding-inline-start: 0.75em;
+     padding-inline-end: 0.75em;
+     padding-block-end: 0.625em;
+     min-inline-size: min-content;
+     border-width: 2px;
+     border-style: groove;
+     border-color: rgb(192, 192, 192);
+     border-image: initial;
 }
 
 .fa-brands {
@@ -99,6 +145,9 @@ a:hover {
 
 .left-text {
      display: block;
+}
+
+.style-text-side {
      padding: 5%;
      gap: 10px;
 }
@@ -108,9 +157,12 @@ a:hover {
      grid-column-start: 2;
      grid-column-end: 3;
      grid-row: 3 / 8;
+     grid-row: 3 / 8;
      display: grid;
      justify-content: center;
      text-align: center;
+     padding: 5%;
+     gap: 10px;
      padding: 5%;
      gap: 10px;
 }
@@ -175,8 +227,10 @@ a:hover {
 }
 
 .gallery {
-     text-align: center;
-     display: block;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 10px;
 }
 
 .footer {
@@ -184,6 +238,87 @@ a:hover {
     grid-column-start: 1;
     grid-column-end: 3;
     gap: 10px;
+    gap: 10px;
     display: grid;
     justify-content: center;
+}
+
+@media screen and (max-width: 678px) {/*För mobil*/
+     .container{
+         display: flex;
+         flex-direction: column;
+     }
+
+    .sidebar {
+        display: none;
+     }
+
+    .nav:hover{
+        display: block;
+     }
+  
+    .nav>ul{
+        display: none;
+     }
+
+     .nav:hover>ul{
+    display: block;
+     }
+
+    .nav {
+     display: none;
+     }
+
+    .nav-burger {
+     background: transparent;   
+    }
+
+ }
+
+ @media screen and (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+   .sidebar {
+       display: none;
+   }
+
+   .nav:hover{
+       display: block;
+   }
+ 
+   .nav>ul{
+       display: none;
+   }
+
+   .nav:hover>ul {
+     display: block;
+     }
+
+   .nav {
+     display: none;
+     }
+
+   .nav-burger {
+    background: transparent;
+    font-size: 30px;   
+     }
+
+   .nav-burger>ul{
+    font-size: 20px;
+   }
+    
+}
+
+@media (min-width: 800px) {
+    .nav-burger {
+     display: none;
+     }
+
+    .nav-burger> ul{
+        display: none;
+    }
+    
 }
