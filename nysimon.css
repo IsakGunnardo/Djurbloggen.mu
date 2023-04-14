@@ -2,7 +2,6 @@ body {
      background-color: rgb(255, 254, 240);
      box-sizing: border-box;
      box-sizing: border-box;
-     background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.sciencephoto.com%2Fimage%2Fz3450860%2F800wm%2FZ3450860-Ant_hill.jpg&f=1&nofb=1&ipt=b981cb1e7df6ea5c7479a7074c103bd586c933fe7cb59b48b903a1d4989f2041&ipo=images);
      background-attachment: fixed;
      background-position: center;
      background-repeat: no-repeat;
@@ -84,7 +83,7 @@ header>nav {
 }
  
 nav {
-     background: rgba(235, 204, 166, 0.8);
+     background: beige;
      grid-column-start: 1;
      grid-column-end: 3;
      display: flex;
@@ -118,7 +117,7 @@ a:hover {
      grid-column-end: 2;
      grid-row-start: 3;
      grid-row-end: 8;
-     background-color: rgba(235, 204, 166, 1);
+     background-color: rgba(235, 204, 166, 0.8);
 }
 
 .side-start {
@@ -127,7 +126,7 @@ a:hover {
      grid-column-end: 2;
      grid-row-start: 3;
      grid-row-end: 4;
-     background-color: rgba(235, 204, 166, 0);
+     background-color: rgba(235, 204, 166, 0.8);
 }
 
 .left-blogg-img {
@@ -159,7 +158,6 @@ fieldset {
      border-style: groove;
      border-color: rgb(192, 192, 192);
      border-image: initial;
- 
 }
 
 .fa-brands {
@@ -176,7 +174,7 @@ fieldset {
 }
 
 .main {
-     background-color: rgb(251, 239, 214, 0.8);
+     background-color: beige;
      grid-column-start: 2;
      grid-column-end: 3;
      grid-row: 3 / 8;
@@ -201,7 +199,7 @@ fieldset {
 
 .main-section1 {
      display: block;
-     background-color: rgb(251, 239, 214, 0);
+     background-color: beige;
      grid-column-start: 2;
      grid-column-end: 3;
      grid-row-start: 3;
@@ -211,7 +209,7 @@ fieldset {
 
 .main-section2 {
      display: grid;
-     background-color: rgb(251, 239, 214, 0);
+     background-color: beige;
      grid-column-start: 2;
      grid-column-end: 3;
      grid-row-start: 4;
@@ -221,7 +219,7 @@ fieldset {
 
 .main-section3 {
      display: grid;
-     background-color: rgb(251, 239, 214, 0);
+     background-color: beige;
      grid-column-start: 2;
      grid-column-end: 3;
      grid-row-start: 5;
@@ -231,7 +229,7 @@ fieldset {
 
 .main-section4 {
      display: grid;
-     background-color: rgb(251, 239, 214, 0);
+     background-color: beige;
      grid-column-start: 2;
      grid-column-end: 3;
      grid-row-start: 6;
@@ -243,7 +241,7 @@ fieldset {
      display: block;
      margin-left: auto;
      margin-right: auto;
-     background-color: rgb(251, 239, 214, 0);
+     background-color: beige;
      grid-column-start: 2;
      grid-column-end: 3;
      grid-row-start: 7;
