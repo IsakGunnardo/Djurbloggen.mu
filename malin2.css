@@ -249,7 +249,7 @@ a:hover{
 
  @media screen and (max-width: 678px) /*mobil anpassning*/
  {
-     .container{
+.container{
         display: flex;
         flex-direction: column;
      }
@@ -264,8 +264,7 @@ a:hover{
 
 #navbox-label {
     
-    display: block;
-  
+    display: block;  
 }
   .nav ul
   {
@@ -280,13 +279,13 @@ a:hover{
     display: block;
 
   }
- .aside{
+  .aside{
   display: none;
   }
-.bildgalleri {
+  .bildgalleri {
     margin-bottom: 15px;
-}
- #footer{
+  }
+  #footer{
     grid-template-columns: 1fr;
     display: flex;
     flex-direction: column;
@@ -295,8 +294,8 @@ a:hover{
     flex-wrap: wrap;
     height: auto;
   
- }
- .formulär {
+  }
+  .formulär {
     margin-bottom: 15px;
     margin-left: 10px;
  }

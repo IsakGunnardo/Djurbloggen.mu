@@ -1,7 +1,7 @@
 body {
     cursor: pointer;
     background-color: rgb(255, 254, 240);
-    background-image: url(https://elephantguide.com/wp-content/uploads/2021/11/Elephants-in-wild-Africa-1024x683.jpeg);
+   
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,7 +11,7 @@ body {
 }
  
  :root {
-    --head-foot: rgba(211, 181, 125, 0.8);
+    --head-foot: rgba(234, 218, 188, 0.8);
     --main-background: rgb(251, 239, 214, 0.8); 
     --side-background: rgba(235, 204, 166, 0.8) ;
     --nav-background:  rgba(235, 204, 166, 0.8); 
@@ -21,7 +21,7 @@ body {
  .container{
      display: grid;
      grid-template-columns: 2fr 5fr;
-      grid-template-rows: 0.1fr 0.1fr 6fr 1fr; 
+      grid-template-rows: auto; 
     
      gap: 10px;
  }
@@ -34,21 +34,7 @@ body {
     text-align: center;
 
  }
- .sticky-totop {
-      display: grid;
-    grid-column-start: 3;
-    grid-row-start: 3;
-    grid-row-end: 3;
-    
-    position: sticky;
-    top: 0;
-    padding: 10px;
-    font-size: 30px;
-    height: 25px;
-   
-    
 
- }
  .textheader {
    justify-content: center;
  }
@@ -99,7 +85,7 @@ input[type="checkbox"] {
      grid-column-start: 1;
      grid-column-end: 2;
      grid-row-start: 3;
-     grid-row-end: 7;
+     
     
      display: grid;
      grid-template-rows: 1fr 2.5fr 2fr;
@@ -114,57 +100,39 @@ input[type="checkbox"] {
     margin-bottom: 30px;
 }
 
-.left2 {
-  align-items: start;
-}
-.left2 img{
-    box-shadow: 2px 2px 2px 2px;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    
-}
-.externalänkar {
-    text-align: center;
-    padding: 10px;
-}
-.externalänkar li {
-    list-style: none;
-}
-.left3{
-    display: grid;
-    align-items: end;
-}
+
  /*här börjar main kontent*/
  .main{
      background-color: var(--main-background);
      grid-column-start: 2;
      grid-column-end: 7;
      grid-row-start: 3;
-     grid-row-end: 7;
      display: grid;
-     
      gap: 10px;
- 
      justify-content: center;
      text-align: center;
- 
  }
- .paragraf-bild1 {
-    box-shadow: 2px 2px 2px 2px;
-   
- }
- .rubrik {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- }
- .paragraf {
+
+   .button1{
+   padding: 10;
+   border-color: orange;
+   border-radius: 10px;
+   }
+   .kontaktformulär {
+    margin-top: 15px;
     padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    line-height: 22px;
- }
-#bildgalleri {
-    background-color: rgb(249, 228, 201);
-}
+   }
+   .kontaktformulär label {
+     font-size: 1.2rem;
+     margin: 10;
+    
+   
+   }
+   .kontaktformulär input{
+   width: 100%; 
+   padding: 8px;
+   }
+   
  .space{
     padding-bottom:  100px;
  }
@@ -179,12 +147,12 @@ input[type="checkbox"] {
  }
  #footer{
     display: grid;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-rows: 1fr ;
     grid-template-columns: 1fr 1fr 1fr;
     background-color:var(--head-foot);
     grid-auto-flow: column;
     grid-auto-flow: row;
-    height: 350px;
+    height: fit-content;
 
 }
 
@@ -249,7 +217,7 @@ a:hover{
 
  @media screen and (max-width: 678px) /*mobil anpassning*/
  {
-     .container{
+.container{
         display: flex;
         flex-direction: column;
      }
@@ -264,8 +232,7 @@ a:hover{
 
 #navbox-label {
     
-    display: block;
-  
+    display: block;  
 }
   .nav ul
   {
@@ -280,13 +247,13 @@ a:hover{
     display: block;
 
   }
- .aside{
+  .aside{
   display: none;
   }
-.bildgalleri {
+  .bildgalleri {
     margin-bottom: 15px;
-}
- #footer{
+  }
+  #footer{
     grid-template-columns: 1fr;
     display: flex;
     flex-direction: column;
@@ -295,15 +262,14 @@ a:hover{
     flex-wrap: wrap;
     height: auto;
   
- }
- .formulär {
+  }
+  .formulär {
     margin-bottom: 15px;
     margin-left: 10px;
  }
  
 
  }
- 
  
  
  
