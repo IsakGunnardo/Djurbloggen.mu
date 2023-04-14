@@ -13,7 +13,7 @@ body {
  :root {
     --head-foot: rgba(234, 218, 188, 0.8);
     --main-background: rgb(251, 239, 214, 0.8); 
-    --side-background: rgba(235, 204, 166, 0.8) ;
+    --side-background: rgba(235, 204, 166, 0.8);
     --nav-background:  rgba(235, 204, 166, 0.8); 
     
  } 
@@ -40,11 +40,13 @@ body {
     grid-row-start: 3;
     grid-row-end: 3;
     
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     padding: 10px;
     font-size: 30px;
     height: 25px;
+    
    
     
 
@@ -260,6 +262,7 @@ a:hover{
     display: block;
     font-size: 30px;
     margin-bottom: 15px;
+  
 }
 
 #navbox-label {

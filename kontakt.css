@@ -112,7 +112,7 @@ input {
      grid-row-start: 3;
      display: grid;
      gap: 10px;
-     justify-content: center;
+
      text-align: center;
  }
 
@@ -121,25 +121,24 @@ input {
    border-color: orange;
    border-radius: 10px;
    }
-   .kontaktformulär {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+   .kontaktform {
+
 
     margin-top: 15px;
     padding: 10px;
     text-align: center;
 
    }
-   .kontaktformulär label {
+   .kontaktform label {
      font-size: 1.2rem;
      margin: 10;
     
    
    }
-   .kontaktformulär input{
-   width: 100%; 
+   .kontaktform input, textarea{
+   width: 80%; 
    padding: 8px;
+   margin: 10px;
    
    }
 
