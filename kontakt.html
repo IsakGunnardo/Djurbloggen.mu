@@ -9,9 +9,9 @@
      
         <header id="header"> 
         
-            <h1 class="textheader">kontakt formulär</h1>
+            <h1 class="textheader">Kontakt formulär! </h1>
         </header>
-        <div class="sticky-totop"><a href="#">🔝</a></div>
+        
        
         <nav class="nav">
            <input type="checkbox" class="navbox" id="navbox">
@@ -21,10 +21,7 @@
                 <li class="navlist"><a href="Isaknyblogg.html">Kobloggena</a></li>
                 <li class="navlist"><a href="nysimon.html">Myrbloggen</a></li>
                 <li class="navlist"><a href="mattias.html">Kängurubloggen</a></li>
-                <li class="navlist"><a href="kontaktformulär.html">Kontakt</a></li>
-            
-                <li class="navlist"><a href="#bildgalleri">bildgalleri</a></li>
-                <li class="navlist"><a href="#fakta">fakta </a></li>
+                <li class="navlist"><a href="kontakt.html">Kontakt</a></li>
            
 
             </ul>
@@ -55,38 +52,53 @@
 
            
             </div>
-            <div class="left2"> 
-              
-        
-     
-               
-
-            </div>
-            <div class="left3">
-                <fieldset id="Contact">
-                    <legend>Kontakta oss</legend>
-                    <form action="">
-                        <label for="Name">Namn</label>
-                        <br>
-                        <input type="text" id="Name" placeholder="Namn">
-                        <br>
-                        <label for="Email">Email</label>
-                        <br>
-                        <input type="email" id="email" placeholder="exempel@gmail.com">
-                        <br>
-                        <label for="messege">Meddelande</label>
-                        <br>
-                        <textarea name="messege" id="messege" col="20" placeholder="Skriv här"></textarea>
-                        <br>
-                        <button type="submit">Skicka</button>
-                    </form>
-                </fieldset>
-            </div>
+            
         </aside>
-       <main>
-    
+        <main class="main">
+            <form action="" class="kontaktform">
+                <h2>Kontakta oss!</h2>
+                <div> <label for="namn">Namn</label> <br>
+                <input type="text" name="namn" id="namn" placeholder="Rosa" required> 
+              </div>
+               <div>
+                <label for="efternamn">Efteramn</label> <br>
+                <input type="text" name="efternamn" id="efternamn" placeholder="rosendotter">
+               </div>
+                <div>
+                 <label for="telefon">telefonnummer</label> <br>
+                 <input type="tel" name="telefon" id="telefon" placeholder="070 00 000 00" >
+                </div>
+                <div>
+                  <label for="email">E-mail</label>  <br>
+                <input type="email" name="email" id="email" placeholder="kosamu@mail.com"required> 
+                 
+                </div>
+                <div>
+                 <label for="ålder">ålder</label> <br>
+                <input type="number" name="ålder" id="ålder" min="1" max="100"> 
+                </div>
+               <div><label>Välj kön</label>
+                <br><label for="man">man</label>
+                  <input type="radio" name="gender" id="man" value="man">
+                </div>
+                <div><label for="kvinna">kvinna</label>
+                    <input type="radio" name="gender" id="kvinna" value="kvinna">
+                </div>
+                
+                <div><label for="hen">hen</label>
+                <input type="radio" name="gender" id="hen" value="hen">
+                </div>
+                <br>
+                <div> <label for="meddelande" id="meddelande"> skriv ditt meddelande här!</label>  <br>
+                <textarea name="meddelande" id="meddelande" cols="50" rows="15" required></textarea>  
+                </div>
+                
+                <br>
+                <button class="button1">Skicka!</button>
+               
+              </form>
       
-           
+
 
             <div class="sticky-totop2"><a href="#">🔝</a></div>
 

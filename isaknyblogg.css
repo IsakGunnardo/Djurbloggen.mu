@@ -8,6 +8,12 @@
         background-size: cover;
 
  }
+ :root {
+    --head-foot: rgba(234, 218, 188, 0.9);
+    --main-background: rgb(251, 239, 214, 0.9); 
+    --side-background: rgba(235, 204, 166, 0.9) ;
+    --nav-background:  rgba(235, 204, 166, 0.9); 
+ }
  .container{
      display: grid;
      grid-template-columns: 2fr 5fr;
@@ -17,7 +23,7 @@
  }
  /*Header kod*/
  header{
-     background: bisque;
+    background: var(--head-foot);
      grid-column-start: 1;
      grid-column-end: 7;
      grid-row-start: 1;
@@ -67,7 +73,8 @@
   }
   /*Kod för navbaren*/
  nav{
-     background: beige ;
+    background:var(--nav-background);
+
      grid-column-start: 1;
      grid-column-end: 7;
      grid-row-start: 2;
@@ -106,7 +113,8 @@
 
 /*Kod för sidebaren*/
  .aside{
-     background-color: beige;
+    background:var(--side-background);
+
      grid-column-start: 1;
      grid-column-end: 2;
      grid-row-start: 3;
@@ -119,7 +127,8 @@
  /*Kod för main innehållet*/
  .main{
      padding: 5%;
-     background-color: beige;
+    background: var(--main-background);
+
      grid-column-start: 2;
      grid-column-end: 7;
      grid-row-start: 3;
@@ -140,12 +149,12 @@
      padding: 5%;
  }
  
- .left2{background: beige;
+ .left2{background: var(--side-background);
  width: auto;
  gap: 10px;
  flex-direction: column;
  align-items: center;
- ;
+ 
  height: 100%;
 
  
@@ -170,7 +179,7 @@
     justify-content: end;
 
  }
- .left1{ background: beige;
+ .left1{ background: var(--side-background);
  text-align: center;
  gap: 10px;
  
@@ -188,7 +197,7 @@
 /*Footer kod*/
  .footer{
 padding: 1%;
-     background-color: bisque;
+background: var(--head-foot);
 grid-template-columns: 3fr;
      grid-column-start: 1;
      grid-column-end: 7;
