@@ -73,12 +73,13 @@ header>h1 {
   }
 
 header>nav {
+     background: transparent;
      grid-column-start: 1;
      grid-row-start: 2;
      display: grid;
-     justify-content: flex-start;
      align-items: center;
-     margin-left: 10px;
+     margin-left: 0px;
+     font-size: 20px;
 }
  
 nav {
@@ -269,6 +270,10 @@ fieldset {
          flex-direction: column;
      }
 
+     div .sticky {
+          display: none;
+     }
+
     .sidebar {
         display: none;
      }
@@ -305,6 +310,10 @@ fieldset {
         flex-direction: column;
     }
 
+    div .sticky {
+     display: none;
+     }
+
    .sidebar {
        display: none;
    }
@@ -325,14 +334,14 @@ fieldset {
           display: none;
      }
 
-   .nav-burger {
-          background: transparent;
-          font-size: 30px;
+   .nav-burger>ul {
+     display: none;
      }
 
-   .nav-burger>ul{
-          font-size: 20px;
-   }
+   .nav-burger:hover>ul {
+     display: block;
+     }
+     
     
 }
 
