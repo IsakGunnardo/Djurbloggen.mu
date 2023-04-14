@@ -149,12 +149,12 @@
      padding: 5%;
  }
  
- .left2{background: var(--side-background)
+ .left2{background: var(--side-background);
  width: auto;
  gap: 10px;
  flex-direction: column;
  align-items: center;
- ;
+ 
  height: 100%;
 
  
@@ -179,7 +179,7 @@
     justify-content: end;
 
  }
- .left1{ background: var(--side-background)
+ .left1{ background: var(--side-background);
  text-align: center;
  gap: 10px;
  
