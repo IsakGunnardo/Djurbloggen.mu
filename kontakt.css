@@ -143,7 +143,7 @@ input[type="checkbox"] {
      background-color: var(--head-foot);
      grid-column-start: 1;
      grid-column-end: span 7;
-     grid-row-start: 8;
+  
  }
  #footer{
     display: grid;
