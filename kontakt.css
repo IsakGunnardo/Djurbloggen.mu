@@ -91,7 +91,7 @@ input[type="checkbox"] {
      grid-template-rows: 1fr 2.5fr 2fr;
  }
 
- .left1, .left2, .left3{
+ .left1{
     padding: 5%;
 }
 .left1 img {
@@ -143,7 +143,7 @@ input[type="checkbox"] {
      background-color: var(--head-foot);
      grid-column-start: 1;
      grid-column-end: span 7;
-     grid-row-start: 8;
+     grid-row-start: 4;
  }
  #footer{
     display: grid;
