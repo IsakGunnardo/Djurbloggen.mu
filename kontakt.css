@@ -107,42 +107,42 @@ input[type="checkbox"] {
      grid-column-start: 2;
      grid-column-end: 7;
      grid-row-start: 3;
-     display: grid;
      gap: 10px;
-     justify-content: center;
-     text-align: center;
+    text-align: center;
  }
 
    .button1{
+    width: 20%;
    padding: 10;
    border-color: orange;
    border-radius: 10px;
    }
-   .kontaktformulär {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+   .kontaktform {
 
+ 
     margin-top: 15px;
-    padding: 10px;
-   }
-   .kontaktformulär label {
-     font-size: 1.2rem;
-     margin: 10;
-    
    
    }
-   .kontaktformulär input{
-   width: 100%; 
-   padding: 8px;
+   .kontaktform label {
+     font-size: 1.2rem;
+    
+
    }
+   .kontaktform input, textarea
+   {
+    width: 80%;
+   padding: 8px;
+   margin: 10px;
+    
+}
+h4 {
+    font-size: large;
+}
    
  .space{
     padding-bottom:  100px;
  }
- .sticky-totop2{
- display: none;
-}
+
  .footer{
      background-color: var(--head-foot);
      grid-column-start: 1;
