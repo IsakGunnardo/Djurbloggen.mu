@@ -1,5 +1,5 @@
 body {
-     background-color: black;
+     background-color: rgb(255, 254, 240);
      box-sizing: border-box;
      box-sizing: border-box;
      background-attachment: fixed;
@@ -57,7 +57,7 @@ div.sticky:hover {/*Gör så att knappen scalar upp när man hovrar över den*/
 }
 
 header {
-     background: rgba(244, 164, 96);
+     background: rgba(234, 218, 188, 0.8);
      display: grid;
      grid-column-start: 1;
      grid-column-end: 3;
@@ -117,7 +117,7 @@ a:hover {
      grid-column-end: 2;
      grid-row-start: 3;
      grid-row-end: 8;
-     background-color: beige;
+     background-color: rgba(235, 204, 166, 0.8);
 }
 
 .side-start {
@@ -126,7 +126,7 @@ a:hover {
      grid-column-end: 2;
      grid-row-start: 3;
      grid-row-end: 4;
-     background-color: beige;
+     background-color: rgba(235, 204, 166, 0.8);
 }
 
 .left-blogg-img {
@@ -234,28 +234,24 @@ fieldset {
      grid-column-end: 3;
      grid-row-start: 6;
      grid-row-end: 7;
-     gap: 10px
+     gap: 10px;
 }
 
-.bildgalleri {
+.picture-gallery {
      display: block;
+     margin-left: auto;
+     margin-right: auto;
      background-color: beige;
      grid-column-start: 2;
      grid-column-end: 3;
      grid-row-start: 7;
      grid-row-end: 8;
-     text-align: center;
-}
-
-.gallery {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     gap: 10px;
+     border-radius: 10px;
+     box-shadow: 3px 3px 3px 3px;
 }
 
 .footer {
-    background-color: bisque;
+    background-color: rgba(234, 218, 188, 0.8);
     grid-column-start: 1;
     grid-column-end: 3;
     gap: 10px;
