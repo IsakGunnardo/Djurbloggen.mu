@@ -88,7 +88,7 @@ input[type="checkbox"] {
      
     
      display: grid;
-     grid-template-rows: 1fr 2.5fr 2fr;
+     grid-template-rows: 1fr;
  }
 
  .left1, .left2, .left3{
@@ -119,6 +119,10 @@ input[type="checkbox"] {
    border-radius: 10px;
    }
    .kontaktformulär {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
     margin-top: 15px;
     padding: 10px;
    }

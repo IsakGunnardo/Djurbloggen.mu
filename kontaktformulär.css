@@ -81,7 +81,7 @@ body {
   }
   
   
-  .kontaktformulär {
+  .kontaktform {
    grid-column-start: 2;
    grid-column-end: 2;
     
@@ -96,12 +96,12 @@ body {
   border-radius: 10px;
   }
   
-  .kontaktformulär label {
+  .kontaktform label {
     font-size: 1.2rem;
     margin: 10;
   
   }
-  .kontaktformulär input{
+  .kontaktform input{
  
   }
   
