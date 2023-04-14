@@ -2,6 +2,10 @@ body {
      background-color: black;
      box-sizing: border-box;
      box-sizing: border-box;
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
 }
 
 p {
@@ -52,13 +56,30 @@ div.sticky:hover {/*Gör så att knappen scalar upp när man hovrar över den*/
      scale: 1.2;    
 }
 
-.header {
+header {
      background: rgba(244, 164, 96);
      display: grid;
      grid-column-start: 1;
      grid-column-end: 3;
      align-items: center;
      justify-content: center;
+     height: fit-content;
+}
+
+header>h1 {
+     grid-column-start: 2;
+     display: grid;
+     justify-content: center;
+  }
+
+header>nav {
+     background: transparent;
+     grid-column-start: 1;
+     grid-row-start: 2;
+     display: grid;
+     align-items: center;
+     margin-left: 0px;
+     font-size: 30px;
 }
  
 nav {
@@ -249,6 +270,10 @@ fieldset {
          flex-direction: column;
      }
 
+     div .sticky {
+          display: none;
+     }
+
     .sidebar {
         display: none;
      }
@@ -262,15 +287,19 @@ fieldset {
      }
 
      .nav:hover>ul{
-    display: block;
+          display: block;
      }
 
     .nav {
-     display: none;
+          display: none;
      }
 
-    .nav-burger {
-     background: transparent;   
+    .nav-burger>ul {
+     display: none;
+
+    }
+    .nav-burger:hover>ul{
+     display: block;
     }
 
  }
@@ -280,6 +309,10 @@ fieldset {
         display: flex;
         flex-direction: column;
     }
+
+    div .sticky {
+     display: none;
+     }
 
    .sidebar {
        display: none;
@@ -294,27 +327,27 @@ fieldset {
    }
 
    .nav:hover>ul {
-     display: block;
+          display: block;
      }
 
    .nav {
+          display: none;
+     }
+
+   .nav-burger>ul {
      display: none;
      }
 
-   .nav-burger {
-    background: transparent;
-    font-size: 30px;   
+   .nav-burger:hover>ul {
+     display: block;
      }
-
-   .nav-burger>ul{
-    font-size: 20px;
-   }
+     
     
 }
 
 @media (min-width: 800px) {
     .nav-burger {
-     display: none;
+          display: none;
      }
 
     .nav-burger> ul{
