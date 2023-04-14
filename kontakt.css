@@ -11,7 +11,7 @@ body {
 }
  
  :root {
-    --head-foot: rgba(234, 218, 188, 0.8);
+    --head-foot: rgba(211, 181, 125, 0.8);
     --main-background: rgb(251, 239, 214, 0.8); 
     --side-background: rgba(235, 204, 166, 0.8) ;
     --nav-background:  rgba(235, 204, 166, 0.8); 
@@ -179,12 +179,12 @@ input[type="checkbox"] {
  }
  #footer{
     display: grid;
-    grid-template-rows: 1fr ;
+    grid-template-rows: 1fr 1fr ;
     grid-template-columns: 1fr 1fr 1fr;
     background-color:var(--head-foot);
     grid-auto-flow: column;
     grid-auto-flow: row;
-    height: fit-content;
+    height: 350px;
 
 }
 
