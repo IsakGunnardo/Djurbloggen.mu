@@ -289,8 +289,12 @@ fieldset {
           display: none;
      }
 
-    .nav-burger {
-          background: transparent;   
+    .nav-burger>ul {
+     display: none;
+
+    }
+    .nav-burger:hover>ul{
+     display: block;
     }
 
  }
