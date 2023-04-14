@@ -78,6 +78,9 @@ input[type="checkbox"] {
     display: none;
 
 }
+input {
+    width: 80%;
+}
   /*här börjar sidebar left*/
  aside
  {
@@ -121,6 +124,8 @@ input[type="checkbox"] {
    .kontaktformulär {
     margin-top: 15px;
     padding: 10px;
+    text-align: center;
+
    }
    .kontaktformulär label {
      font-size: 1.2rem;
@@ -131,7 +136,9 @@ input[type="checkbox"] {
    .kontaktformulär input{
    width: 100%; 
    padding: 8px;
+   
    }
+
    
  .space{
     padding-bottom:  100px;
@@ -143,7 +150,7 @@ input[type="checkbox"] {
      background-color: var(--head-foot);
      grid-column-start: 1;
      grid-column-end: span 7;
-     grid-row-start: 4;
+  
  }
  #footer{
     display: grid;
