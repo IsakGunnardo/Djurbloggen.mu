@@ -78,6 +78,9 @@ input[type="checkbox"] {
     display: none;
 
 }
+input {
+    width: 80%;
+}
   /*här börjar sidebar left*/
  aside
  {
@@ -91,7 +94,7 @@ input[type="checkbox"] {
      grid-template-rows: 1fr;
  }
 
- .left1, .left2, .left3{
+ .left1{
     padding: 5%;
 }
 .left1 img {
