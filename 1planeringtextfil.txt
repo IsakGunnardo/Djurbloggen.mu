@@ -1,0 +1,57 @@
+Gruppuppgift upplägg 1 
+
+Vi ska göra en blogg med tema djur. Alla väljer ett djur och gör en sida med lite info och bilder om djuret.  
+
+Färg tema: beige	 
+
+Text färg: svart 
+
+Text typsnitt: ej valt öppen för förslag 😊  
+
+ 
+
+Startsidan ska innehålla följande: 
+
+Header 
+
+Navigationsbar 
+
+Main 
+
+Section med <h1> - <h2>  
+
+Footer 
+
+Vi tänkte jobba från layouten från följande websida: https://www.w3schools.com/Css/tryit.asp?filename=trycss_website_layout_blog 
+
+Vi jobbar tillsammans med kodning av html och css och för startsidan.  
+
+ 
+
+Gruppuppgift 2 
+
+Vi ska förbättra teman och struktur samt lägga till 2 formulär. 1 kontakt formulär samt 1 följ nyhetsbrevs formulär.  
+
+ 
+
+Möte kring tema utveckling:  
+
+Vi ska ändra vår tema design så att det är samma tema genom hela bloggen. Dvs man inte märker på skalet att man går in på en ny blogg post. 
+
+Just nu känns våran bloggsida mer som en hemsida om djur än en blogg. Vi vill få mer blogg känsla på vår sida genom att bland annat göra en sidebar som sträcker sig mellan header och footer . 
+
+Header, sidebar, footer ska vara samma på alla blogg sidor.  
+
+Vi ska ha samma nyhetsbrevformulär i  footern på alla sidor. 
+
+Vi ska skapa en egen sida med ett kontaktformulär. 
+
+Design idéer:  
+
+Skapa en sidebar till höger med länkar till varje bloggsida 
+
+Skapa en responsiv hamburgar meny som kommer fram då man minimerar skärmstorleken.  
+
+Lägger in bilder i bakgrunden och skapar en mer transparant färg i heder/side/footer. 
+
+Ändrar designen till en mer modern fyrkantig design. 
