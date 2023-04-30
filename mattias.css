@@ -1,6 +1,4 @@
-body{
-    /* background-color: rgb(0,20,10);*/
- }
+
  :root{
     --back: rgba(242, 210, 189, 0.9);
 }
@@ -109,7 +107,7 @@ body{
      padding: 5%;
  }
  
- .left1{background: beige;
+ .left1{
  width: auto;
  gap: 10px;
  flex-direction: column;
@@ -121,10 +119,11 @@ body{
      width: 100%;
      padding: 5%;
  }
- .left2{ background: beige;
+ .left2{ 
  gap: 100px;
  text-align: center;
  }
+
  legend{
     text-align: center;
  }
